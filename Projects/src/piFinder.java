@@ -1,21 +1,19 @@
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-/*
- * This program will generate PI for a given number,
+/**This program will generate PI for a given number,
  * upto many decimal places.
  *
- * @author: mohamedi
+ * @author enomoha
  *
  */
-
 public class piFinder {
 
-    private double inputValue=0;
+    private double _inputValue=0d;
     private static final double PI = Math.PI;
     Scanner input = new Scanner(System.in);
-    private double outputValue = 0d;
-    private BigDecimal piValue=new BigDecimal(0);
+    private double _outputValue = 0d;
+
     /**
      *
      * This method expects an input user integer input,
@@ -25,7 +23,7 @@ public class piFinder {
 
         try{
         System.out.println("Please Enter a value:");
-        inputValue = input.nextDouble();
+        _inputValue = input.nextDouble();
         }
         catch(Exception ex){
             System.out.println("NO OR WRONG USER INPUT");
@@ -33,12 +31,48 @@ public class piFinder {
         finally {
             input.close();
         }
-        //Generate PI value for the number
-        outputValue = (inputValue * PI) ;
-        System.out.print(outputValue);
-//        piValue = new BigDecimal(outputValue);
-//        System.out.print(piValue);
+
+        generatePI(_inputValue);
+        }
+
+    /** Calls enterprise or Scientific
+     *  version
+     * @param pInputValue
+     */
+    public void generatePI(double pInputValue){
+
+        generatePIEnterprise(pInputValue);
+        generatePIScientific(pInputValue);
 
     }
 
+    /** Enterprise version with BigDecimal
+     * where BigDecimal is used for
+     * precise and accurate results
+     * @param pInputValue
+     * @return BigDecimal
+     */
+    public BigDecimal generatePIEnterprise(double pInputValue){
+
+        int __output = 0;
+        //Generate PI value for the number
+        __output = (int) (pInputValue * PI) ;
+        BigDecimal oValue = new BigDecimal(__output);
+        System.out.println("Your Value Rounded off: " + oValue);
+        return oValue;
+    }
+
+    /** Scientific version with double or float
+     *  where more number of digits be present
+     * @param pInputValue
+     * @return double
+     */
+    public double generatePIScientific(double pInputValue){
+
+        //Generate PI value for the number
+        _outputValue = (pInputValue * PI) ;
+        System.out.println("Your Value Precisly: " + _outputValue);
+        return _outputValue;
+    }
 }
+
