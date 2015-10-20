@@ -28,3 +28,12 @@
 
 - Git gc and git unlink the file
 
+## ALogrithm ##
+
+- Lazy loading 
+
+
+## DAB ##
+
+- Direct Mappings
+- 
