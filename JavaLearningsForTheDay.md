@@ -9,6 +9,7 @@
 ## Core Java ##
 
 - OR Opreator ref. card
+- New collections framwrk vs. Historic vector usage 
 
 
 ## Framwork ##
@@ -36,4 +37,9 @@
 ## DAB ##
 
 - Direct Mappings
+- onetoone
+- onetomany
+- manytomany
+- descriptor
+- 
 - 
