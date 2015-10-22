@@ -9,7 +9,8 @@
 ## Core Java ##
 
 - OR Opreator ref. card
-- New collections framwrk vs. Historic vector usage 
+- New collections framwrk vs. Historic vector usage
+- double unittests 
 
 
 ## Framwork ##
