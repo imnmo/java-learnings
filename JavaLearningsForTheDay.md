@@ -10,7 +10,10 @@
 
 - OR Opreator ref. card
 - New collections framwrk vs. Historic vector usage
-- double unittests 
+- double unittests
+- Big Decimal add, compareTo, BigDecial.valueoF and all 
+- & BigDecimal operations
+-  
 
 
 ## Framwork ##
@@ -44,3 +47,5 @@
 - descriptor
 - 
 - 
+## Hack or Dirty Tricks ##
+- Sncode via to get the value..
