@@ -1,8 +1,7 @@
 package Text;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -21,7 +20,7 @@ public class StringReverse {
 	private String _inputValue="" ;
     Scanner input = new Scanner(System.in);
 
-    /*
+    /**
      * Handles the given input
      * from the console
      */
@@ -39,24 +38,53 @@ public class StringReverse {
             input.close();
         }
 
-        stringReverser(_inputValue);
+        stringReverser(_inputValue); // A given string reverser
+        stringReverserAsList(); // Bunch of string ´reverser
 
 	}
 
-	/* Reverses the given input based on
+	/** Reverses the given input based on
 	 * the user input
+	 *
+	 * implementation based on the naive attempt
+	 *  using for loop reverse iteration
+	 *
 	 *
 	 */
 	public void stringReverser(String pInput){
 
-		//Create a list and fill in the data
+		for(int i= pInput.length()-1; i >= 0; i--)
+		{
 
-		List<String> stringList = new ArrayList<String>();
-		stringList = Arrays.asList(pInput);
-		for (String s: stringList){
+			System.out.println(pInput.charAt(i));
+		}
+
+	}
+
+	/**
+	 *	Reverses the given input based on
+	 * the set or bunch of strings
+	 *
+	 * implementation based on the list reverse
+	 *
+	 */
+
+	public void stringReverserAsList(){
+
+		List<String> StringList = new ArrayList<String>();
+		StringList.add("one");
+		StringList.add("two");
+		StringList.add("ka");
+		StringList.add("four");
+
+		Collections.reverse(StringList);
+		for(String s: StringList){
 
 			System.out.println(s);
+		}
 
-			}
+
 	}
+
+
 }
