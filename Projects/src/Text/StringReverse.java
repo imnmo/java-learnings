@@ -1,6 +1,8 @@
 package Text;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -46,9 +48,15 @@ public class StringReverse {
 	 *
 	 */
 	public void stringReverser(String pInput){
-		for (char s: pInput.toCharArray()){
+
+		//Create a list and fill in the data
+
+		List<String> stringList = new ArrayList<String>();
+		stringList = Arrays.asList(pInput);
+		for (String s: stringList){
 
 			System.out.println(s);
+
 			}
 	}
 }
