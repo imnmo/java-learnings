@@ -19,6 +19,7 @@ public class StringReverse {
 
 	private String _inputValue="" ;
     Scanner input = new Scanner(System.in);
+	String output ="";
 
     /**
      * Handles the given input
@@ -39,7 +40,7 @@ public class StringReverse {
         }
 
         stringReverser(_inputValue); // A given string reverser
-        stringReverserAsList(); // Bunch of string ´reverser
+//        stringReverserAsList(); // Bunch of string ´reverser
 
 	}
 
@@ -55,9 +56,11 @@ public class StringReverse {
 
 		for(int i= pInput.length()-1; i >= 0; i--)
 		{
-
-			System.out.println(pInput.charAt(i));
+			String tempOutput = pInput.substring(i,i+1);
+			output += tempOutput;
 		}
+
+		System.out.println(output);
 
 	}
 
@@ -76,11 +79,10 @@ public class StringReverse {
 		StringList.add("two");
 		StringList.add("ka");
 		StringList.add("four");
-
 		Collections.reverse(StringList);
 		for(String s: StringList){
-
 			System.out.println(s);
+
 		}
 
 
