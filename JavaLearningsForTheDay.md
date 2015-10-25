@@ -49,3 +49,9 @@
 - 
 ## Hack or Dirty Tricks ##
 - Sncode via to get the value..
+
+
+## horizons learning ##
+- nosql
+- microservices
+- docker start-- complete brainer !!!
