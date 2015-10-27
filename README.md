@@ -121,7 +121,7 @@ Text
 
 **Fizz Buzz** - Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
-**Reverse a String** - Enter a string and the program will reverse it and print it out.
+~~**Reverse a String** - Enter a string and the program will reverse it and print it out.~~ DONE!!
 
 **Pig Latin** - Pig Latin is a game of alterations played on the English language game. To create the Pig Latin form of an English word the initial consonant sound is transposed to the end of the word and an ay is affixed (Ex.: "banana" would yield anana-bay). Read Wikipedia for more information on rules.
 
@@ -271,6 +271,12 @@ Security
 -------------
 
 **Caesar cipher** - Implement a Caesar cipher, both encoding and decoding. The key is an integer from 1 to 25. This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC". This simple "monoalphabetic substitution cipher" provides almost no security, because an attacker who has the encoded message can either use frequency analysis to guess the key, or just try all 25 keys.
+
+
+Algorithms Book [Robert et al.]
+-------------
+~~**GCD Calculator** -- Calculate the GCD using Euclids algorithm ~~ DONE!!
+
 
 
 
