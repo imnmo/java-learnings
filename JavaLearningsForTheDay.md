@@ -45,8 +45,11 @@
 - onetomany
 - manytomany
 - descriptor
-- 
-- 
+- more on descriptor 
+- database classes 
+- outer join
+
+
 ## Hack or Dirty Tricks ##
 - Sncode via to get the value..
 
