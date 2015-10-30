@@ -1,6 +1,8 @@
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+import javax.script.Bindings;
+
 /**This program will generate PI for a given number,
  * upto many decimal places.
  *
@@ -11,6 +13,7 @@ public class piFinder {
 
     private double _inputValue=0d;
     private static final double PI = Math.PI;
+    
     Scanner input = new Scanner(System.in);
     private double _outputValue = 0d;
 
@@ -58,6 +61,13 @@ public class piFinder {
         //Generate PI value for the number
         __output = (int) (pInputValue * PI) ;
         BigDecimal oValue = new BigDecimal(__output);
+        BigDecimal myDecimal = new BigDecimal(10);
+        BigDecimal PiDecimal = myDecimal.multiply((new BigDecimal(PI)));
+
+        System.out.println("pidecimal " + PiDecimal);
+        System.out.println(" pI" + new BigDecimal(PI));
+
+
         System.out.println("Your Value Rounded off: " + oValue);
         return oValue;
     }
@@ -71,6 +81,7 @@ public class piFinder {
 
         //Generate PI value for the number
         _outputValue = (pInputValue * PI) ;
+
         System.out.println("Your Value Precisly: " + _outputValue);
         return _outputValue;
     }
