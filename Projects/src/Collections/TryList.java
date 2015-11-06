@@ -4,10 +4,6 @@ import java.util.*;
 
 public class TryList {
 
-
-
-
-
 	public static void main(String [] args){
 
 
