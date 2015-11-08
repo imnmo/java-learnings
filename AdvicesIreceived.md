@@ -82,9 +82,14 @@
 1. 		risk taking is important and consequence will pay off very well
 1. 		"paint outside the lines"
 1. 		We should always "Try and fail" but never fail to try
-1. 		"Anti-fragile" book recommendations
+1. 		"Anti-fragile" book recommendation
 
 [Vinod khosla](https://www.youtube.com/watch?v=HZcXup7p5-8&index=4&list=PLxq_lXOUlvQAwaY_9K4ZFH9Xdar9WzCaL)
+
+#### [Stanford -TECHNOLOGY AND ENTRE] Patrick(Stripe) and Apoorva(instacart) ####
+1. If you got to do something- Just "persist"
+2. "Cycling doesn't get better, we need move fast"
+3. Amazon lessons- how they value their customers- on every bug they fix and they leave a empty chair as their customer.
  
 ### What works for me - Tech thingy ###
 1. Work without distraction
@@ -93,6 +98,7 @@
 4. Can do only 12 hours at stretch 
 5. weekends I need to take off for about 4-6 hours outside computer(dinner, movie, meetups -everything non-computer)
 6. Music pumps me a lot
+7. 
 
 ### What I like ###
 
@@ -112,3 +118,8 @@
 1. Coursera java track - *reason not so motivating excercise*
 2. Coursera Big Data track - *utterly BS*
 3. Udacity Android  - *Very good, but mostly can be done as side way course, not as main course*
+
+### Understandings about me ####
+1. after doing anything(for about 12-14 hours), I feel refreshed to work more- rather than consistently working(day-in-day out).
+2. I need inspirations buddy- always and I move by it
+3. 
