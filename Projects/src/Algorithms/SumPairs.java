@@ -1,31 +1,23 @@
 package Algorithms;
 
 /**
- *
- * @author enomoha
- *
- * Basically the sum pairs and the dice rollings are in a way similar
- */
+public class TwoSum {
+    public int[] twoSum(int[] numbers, int target) {
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int[] ret = new int[2];
 
-public class SumPairs {
+        for (int i = 0; i < numbers.length; i++) {
+            if (map.containsKey(target - numbers[i])) {
 
-
-    public void generateSumPairs(int inputArray[], int sumValue)
-    {
-        //Use the traditional complete control loop
-        for(int i = 0; i < inputArray.length ; ++i){
-            for(int j = 0; j < inputArray.length ; ++j)
-            {
-
-                int summer =0;
-                summer = inputArray[i] + inputArray[j];
-                if (summer == sumValue)
-                {
-                    System.out.println("Summer" + summer);
-                    System.out.println("Bingo");
-                }
-                }
+                // As the index is not ZERO based, we should add one to the result.
+                ret[0] = map.get(target - numbers[i]) + 1;
+                ret[1] = i + 1;
+                return ret;
             }
+            map.put(numbers[i], i);
         }
 
+        return ret;
+    }
+}
     }
