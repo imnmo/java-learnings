@@ -21,6 +21,7 @@ public class Book {
        if (!(o instanceof Book)) {
           return false;
        }
+       // type cast o to Book so that we can compare data members
        return this.id == ((Book)o).id;
     }
 
