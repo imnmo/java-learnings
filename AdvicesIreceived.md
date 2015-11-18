@@ -122,4 +122,8 @@
 ### Understandings about me ####
 1. after doing anything(for about 12-14 hours), I feel refreshed to work more- rather than consistently working(day-in-day out).
 2. I need inspirations buddy- always and I move by it
-3. 
+
+
+##Startup culture that works##
+
+https://www.youtube.com/watch?v=GH-rqAZJZbE&list=PLHRxVckaE8dY6XvBLwM__eXOqFmzCbk9L
