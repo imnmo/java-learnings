@@ -9,7 +9,7 @@ public class MaximumFinderTester {
 
         MaximumFinder myMaximumFinder = new MaximumFinder();
         // ArrayList version
-        //List<Integer> myList = new ArrayList<Integer>();
+//        List<Integer> myList = new ArrayList<Integer>();
         //LinkedList
         List<Integer> myList = new LinkedList<Integer>();
 

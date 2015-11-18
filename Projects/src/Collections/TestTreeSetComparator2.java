@@ -27,5 +27,4 @@ public class TestTreeSetComparator2 {
         Set<PhoneBookEntry> newSet = set.descendingSet();  // Reverse the order
         System.out.println(newSet); // [Patrick, PAUL, peter]
      }
-
 }
