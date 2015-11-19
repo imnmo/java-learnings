@@ -1,6 +1,8 @@
 package Collections;
 
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 public class TestLinkedHashSet {
    public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class TestLinkedHashSet {
       set.add(null);  // but no duplicate
       set.add(book2);
       System.out.println(set);  // [1: Java for Dummies, 3: more Java for more Dummies,
-                                //  null, 2: Java for more Dummies]
+                                //  null, 2: Java for more Dummies]^
+
    }
 }

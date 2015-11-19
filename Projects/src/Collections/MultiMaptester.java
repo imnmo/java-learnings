@@ -7,8 +7,6 @@ public class MultiMaptester {
         MultiMap myObj = new MultiMap();
         myObj.setValues();
         myObj.getValues();
-
-
     }
 
 }
