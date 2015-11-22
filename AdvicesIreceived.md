@@ -122,8 +122,19 @@
 ### Understandings about me ####
 1. after doing anything(for about 12-14 hours), I feel refreshed to work more- rather than consistently working(day-in-day out).
 2. I need inspirations buddy- always and I move by it
+3. I am very great at the learning anything new- frameowork, langugae, technology, anything you name it.. Can do the job really fast...BUT!!! I need an exmaple to kickstart else I consume time.. inventing a wheel always takes time
 
 
 ##Startup culture that works##
 
 https://www.youtube.com/watch?v=GH-rqAZJZbE&list=PLHRxVckaE8dY6XvBLwM__eXOqFmzCbk9L
+
+
+## To DO watch talks ##
+
+- SRK's edinburh speech
+- BCG TED talks
+-Few Analytics speech
+- Jack ma speech is mind blowing one
+- Manoj Bargavha n TIE CON speech is breath taking -- he is not an IIT'an
+- 
