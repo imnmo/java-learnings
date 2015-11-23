@@ -34,7 +34,7 @@
 2. Understand what is happening than just doing it artificially
 3. You should know what you are doing
 4. Save time on working few things manually a.k.a Automate
-5. 
+5. tool usage should be well known and use them really ... i mean really fast 
 
 ### TO DO ###
 - Alibaba- jack ma
