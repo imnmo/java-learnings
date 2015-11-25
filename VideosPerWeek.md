@@ -3,5 +3,10 @@
 - Standford Business school- 
 - https://www.youtube.com/watch?v=Sl7Bdn-9MT8 -- to watch
 - https://www.youtube.com/watch?v=LsuT1pS0jZs -- sir alex fergusson on Practise,practise, practise..
-
+- PYcon- video on Hash funcions
+	- Hash function
+	- Hast table
+	- Math for hash function
+	- collision
+	- line probing
 
