@@ -32,6 +32,7 @@
 ## GIT ##
 
 - Git gc and git unlink the file
+- 
 
 ## ALogrithm ##
 
@@ -62,3 +63,14 @@
 ## business domain ##
 - promotions algo.
 - absolute discount and other
+
+
+
+
+MySkillz:
+
+-- Amazing learner and get fast on learning somthing new and implement them..
+-- Good strategy thinker!!!
+-- Kknows to how to build up the thiungs
+-- Architecture and putting things I like(Good at)
+--
