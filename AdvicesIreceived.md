@@ -25,6 +25,19 @@
 - Creating versus Consuming always maintain the balance
 - Stay Up Early
 
+## Andrew Ng ###
+When deciding how to spend your time, I recommend you take into account two criteria:
+
+- Whether what you're doing can change the world.
+- How much you'll learn.
+
+Even today, this is how I decide how to spend my time.
+
+- To summarize: Keep investing in your own learning, even when it's hard. And keep searching for a way to contribute to something that helps humanity!
+
+- But the most important thing is to keep on learning. Not just for a few months, but for years.
+Every Saturday, you will have a choice between staying at home and reading research papers/implementing algorithms, vs. watching TV. If you spend all Saturday working, there probably won't be any short-term reward, and your current boss won't even know or say "nice work." Also, after that Saturday of hard work, you're not actually that much better at machine learning. But here's the secret: If you do this not just for one weekend, but instead study consistently for a year, then you will become very good.
+
 ### Elon Musk ###
 - take negative feedback seriously
 
@@ -53,6 +66,7 @@
 2. Gandhi - *few good things*
 3. Rich dad, poor dad *Worth a try*
 4. Anit-fragile *Started*
+5. How to get rich "Slef-help category"
  
 > note there are lot failure attempts been done so 
 
@@ -99,6 +113,14 @@
 5. weekends I need to take off for about 4-6 hours outside computer(dinner, movie, meetups -everything non-computer)
 6. Music pumps me a lot
 7. 
+##  MySkillz ##
+
+-- Amazing learner and get fast on learning somthing new and implement them..
+-- Good strategy thinker!!!
+-- Kknows to how to build up the thiungs
+-- Architecture and putting things I like(Good at)
+--
+
 
 ### What I like ###
 

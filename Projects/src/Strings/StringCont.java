@@ -7,7 +7,6 @@ package Strings;
  *
  */
 public class StringCont
-
 {
     /**
      *
@@ -17,9 +16,9 @@ public class StringCont
      */
     protected void StringConcatnate()
     {
-        //String result = new String ("l");// Pretty much wrong way to do-- DONT DO THAT
-        String result = " ";
-        int numOfItems=10000;
+        //String result;// Pretty much wrong way to do-- DONT DO THAT
+        String result = "";
+        int numOfItems=1000;
 
 
         long startTime = System.nanoTime();
@@ -37,9 +36,9 @@ public class StringCont
  */
         protected void StringConcatnateWithBuilder()
         {
-            int numOfItems=10000;
+            int numOfItems=1000;
 
-            StringBuilder result = new StringBuilder(numOfItems );
+            StringBuilder result = new StringBuilder();
 
             long startTime = System.nanoTime();
             for (int i = 0; i < numOfItems ; i ++)
