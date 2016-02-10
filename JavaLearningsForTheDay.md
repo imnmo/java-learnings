@@ -60,8 +60,5 @@
 - microservices
 - docker start-- complete brainer !!!
 
-## business domain ##
-- promotions algo.
-- absolute discount and other
 
 

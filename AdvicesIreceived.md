@@ -42,7 +42,7 @@ Every Saturday, you will have a choice between staying at home and reading resea
 - take negative feedback seriously
 
 
-#### Yi Jin, Dimitar(Ericsson) ####
+#### YJP, DP ####
 1. TRY things out and then see!
 2. Understand what is happening than just doing it artificially
 3. You should know what you are doing
