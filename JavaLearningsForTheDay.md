@@ -2,41 +2,31 @@
 
 
 ## Web services##
-- RESTful
+- RESTful services using the JAX-RS builder
 - SOAP 
 
 
 ## Core Java ##
-
-- OR Opreator ref. card
-- New collections framwrk vs. Historic vector usage
-- double unittests
-- Big Decimal add, compareTo, BigDecial.valueoF and all 
-- & BigDecimal operations
 -  
 
-
+## J2EE ##
+- Jsf servlets etc.,
 ## Framwork ##
 
 - Spring and HIbernate
 - ORM only Hibernate
+- Spring Data pattern
 
-
-
-## MISC ##
-
-- JAXB
-
-
-
-## GIT ##
-
-- Git gc and git unlink the file
-- 
-
+ 
 ## ALogrithm ##
 
-- Lazy loading 
+- Plain old implementation of the Stacks, queues, linked lists, Heaps, trees based algorithm with emphasis on sort and search
+
+
+## Design pattern
+
+- Creational pattern - 
+	- Builder pattern
 
 
 ## DAB ##
@@ -50,15 +40,14 @@
 - database classes 
 - outer join
 
-
-## Hack or Dirty Tricks ##
-- Sncode via to get the value..
+## Casssandra and No-SQL technology ##
+- the DataStax seminar is planned as of now...
 
 
 ## horizons learning ##
-- nosql
 - microservices
 - docker start-- complete brainer !!!
 
+## Whats cooking up there in the Javascript world ##
 
 
