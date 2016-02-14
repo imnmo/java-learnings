@@ -8,8 +8,6 @@
 
 
 ## Advices ##
-
-
 ### Random guy in quora ###
 - Make Computer Science fundamentals very strong , mainly DataStructure & Algorithm.
 -Habit of solving atleast 3-4 code snippets/Week , check Leetcode/CareerCup
@@ -146,6 +144,21 @@ Every Saturday, you will have a choice between staying at home and reading resea
 2. I need inspirations buddy- always and I move by it
 3. I am very great at the learning anything new- frameowork, langugae, technology, anything you name it.. Can do the job really fast...BUT!!! I need an exmaple to kickstart else I consume time.. inventing a wheel always takes time
 
+## Caasandra Days lessons ##
+
+ - This time I got bit better than previous meetups and could open up a bit and netwrok with the people
+ - Man but this the golden egg "Network Effect"-- If you have stuff and meet up with confidence YOU'LL BECOME A ROCKSTAR DUDE-- Your attitude matters in influencing people
+ - You got to have an concrete knowledege and build up on that basis -- You ll be a winner
+ - Also, remember imran you grow along people with some homework dont expect to crack the ball without strong influences
+ - You got to be leader. Period!!
+ - Berlin has lot of startup eco systems
+ - People know each other and they get along with each other
+ - Bottom line; keep attending this stuff its a brainer!!
+## Brainer on Architecture from StadtSchule ##
+- There are 75% of people still dont get the complete stream of the Software and its usage
+- People are so dumb that this BIG DATA AND all gonna take up their lifes 
+ -
+
 
 ##Startup culture that works##
 
@@ -153,8 +166,6 @@ https://www.youtube.com/watch?v=GH-rqAZJZbE&list=PLHRxVckaE8dY6XvBLwM__eXOqFmzCb
 
 
 ## To DO watch talks ##
-
-- SRK's edinburh speech
 - BCG TED talks
 -Few Analytics speech
 - Jack ma speech is mind blowing one
