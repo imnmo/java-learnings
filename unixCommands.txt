@@ -1,0 +1,21 @@
+bash
+
+gmake purge install ## on the global make file for cleanup, install (c++)
+
+ps -ef |grep xxx(username) - shows all the values or running streams
+
+history|grep ()whatever)	
+
+ls -ltr ## lists with acces rights
+
+
+grep --include=\*.{c,h} -rnw 'directory' -e "pattern" ## Effcient Grep Commands
+
+find . -name 'FolderBasename*' -type d ## find commands for a file
+
+grep -r /resources * ## Finds all recursively but slowly
+
+pkill -u xxxx(username) ## To kill all process
+
+kill -9 process_identifier ## kill a process
+
