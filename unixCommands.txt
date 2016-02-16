@@ -19,3 +19,4 @@ pkill -u xxxx(username) ## To kill all process
 
 kill -9 process_identifier ## kill a process
 
+diff -bur /bssf_finance/master/myRM/bssf_finance/master/finance/com.ericsson.bss.rm.finance.integration
