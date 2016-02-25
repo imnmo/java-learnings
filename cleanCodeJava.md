@@ -3,10 +3,11 @@ Item 22: Favor static member classes over nonstatic
 
 Nested class should exist only to service its enclosing class. There are four kinds of nested classes:
 
-1. Static member classes (static nested class)
-2. Non-static member classes,
-3. Anonymous classes,
-4. Local classes
+* Static member classes (static nested class) 
+## 
+* Non-static member classes,
+* Anonymous classes,
+* Local classes
 
 2., 3. and 4. are also called "Inner" classes.
 
