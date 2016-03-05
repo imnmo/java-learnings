@@ -15,20 +15,25 @@ public interface AbstractStackI
      * push  the elements into the stack
      * @param pitem
      */
-    void pushElements(Object pitem);
+    void pushElements(String pitem);
 
     /**
      * pops the top element from the stack
      */
-    void popElements();
+    String popElements();
 
     /**
      * checks whether the stack empty or not
      */
     Boolean isEmpty();
+    
+    /**
+     * Checks whether the Stack is full or not
+     */
+    Boolean isFull();
 
     /**
-     *
+     * print the elements of the Stack 
      */
 
     void displayElements();
@@ -36,5 +41,5 @@ public interface AbstractStackI
     /**
      *Seek and tells the top most element in the stack
      */
-    void peekElements();
+    String peekElements();
 }
