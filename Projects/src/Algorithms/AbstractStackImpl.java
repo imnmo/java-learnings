@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class AbstractStackImpl<Item> implements AbstractStackI, Iterable<Item>{
 
     protected String myStackArray[]; //Stack holding the array
-    protected int sizeOfStack; //Holds the size of stack
+    protected int positionOfElementinStack; //Holds the position  of elements to be added in stack
 
     //A default constructor taking the intial capacity for stack allocation  
     public AbstractStackImpl(int stackCapacity) {
@@ -21,18 +21,18 @@ public class AbstractStackImpl<Item> implements AbstractStackI, Iterable<Item>{
     //basically move the position and add the element
     @Override
     public void pushElements(String Item) {
-        myStackArray[sizeOfStack++] = Item;
+        myStackArray[positionOfElementinStack++] = Item;
     }
 
     //basically move the position of the array holding
     @Override
     public String popElements() {
-        return myStackArray[sizeOfStack--];
+        return myStackArray[positionOfElementinStack--];
     }
 
     @Override
     public Boolean isEmpty() {
-        if (sizeOfStack == 0)
+        if (positionOfElementinStack == 0)
             return true;
         return false;
     }
@@ -57,8 +57,17 @@ public class AbstractStackImpl<Item> implements AbstractStackI, Iterable<Item>{
     //just takes the length and checks whether is full or not
     @Override
     public Boolean isFull() {
-        if (myStackArray.length ==  sizeOfStack)
+        if (myStackArray.length ==  positionOfElementinStack)
             return true;
         return false;
+    }
+
+    /**
+     * returns the size of the stack
+     */
+    
+    @Override
+    public int sizeOfStack() {
+        return positionOfElementinStack;
     }
 }

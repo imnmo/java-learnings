@@ -39,6 +39,10 @@ public interface AbstractStackI
     void displayElements();
 
     /**
+     * Returns the size of the current stack
+     */
+    int sizeOfStack();
+    /**
      *Seek and tells the top most element in the stack
      */
     String peekElements();
