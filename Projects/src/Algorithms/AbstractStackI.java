@@ -46,4 +46,9 @@ public interface AbstractStackI
      *Seek and tells the top most element in the stack
      */
     String peekElements();
+    
+    /**
+     * resize the array when needed
+     */
+    void resize(int maximumReSizeValue);
 }
