@@ -93,12 +93,11 @@ public class AbstractStackImpl<Item> implements AbstractStackI, Iterable<String>
     
     
     /**
-     * Helper class to implement the iteration of this collection
+     * Helper non-static class to implement the iteration of this collection
      */
     private class ReverseArrayIterator implements Iterator<String>{
         
         private int i = positionOfElementinStack - 1;
-
         /**
          * check for some item and return true if exists
          * @return
