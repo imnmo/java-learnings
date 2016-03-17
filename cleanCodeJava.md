@@ -89,43 +89,18 @@ rather than a nonstatic member class.
    * Anonymous classes have enclosing instances if and only if they occur in a nonstatic context.
    * Can be only instanciated at the point where they are declared.
    * No instanceof tests possible
-   * You can't declare an anonymous class to implement multiple interfaces, or to extend a class and implement an interface 
-     at the same time.
-   * Because anonymous classes occur in the midst of expressions, they must be kept shortâ€” about ten lines or fewerâ€”or 
-     readability will suffer.
+   * You can't declare an anonymous class to implement multiple interfaces, or to extend a class and implement an interface at the same time.
+   * Because anonymous classes occur in the midst of expressions, they must be kept short 
    * Common use: create function objects on the fly.
-   * Process objects, such as Runnable, Thread, or TimerTask instances. A third common use is within static factory methods 
-     (see the intArrayAsList method in Item 18).
+   * Process objects, such as Runnable, Thread, or TimerTask instances. A third common use is within static factory methods (see the intArrayAsList method in Item 18).
    * Anonymous classes can be compared with closures in other languages.
    * An anonymous class has access to the members of its enclosing class.
    * An anonymous class cannot access local variables in its enclosing scope that are not declared as final or effectively 
      final.
    * Like a nested class, a declaration of a type (such as a variable) in an anonymous class shadows any other declarations 
      in the enclosing scope that have the same name. See Shadowing for more information.
-   * In Java 8 you can use a lambda expression instead of an anonymous class expression
+   * In Java 8 you can use a *lambda expression* instead of an anonymous class expression
    
    Examples:
-   4.1. AnonymousHalloClass, AnonymousClickHandlerTest, DataStructure
- 
-   button.addActionListener(new ActionListener() {
-      public void actionPerformed(ActionEvent e)
-      {
-        // do something.
-      }
-   });
-
-   new Thread() {
-            public void run() {
-                try {
-                    sleep(300);
-                } 
-                catch (InterruptedException e)
-                {
-                    // TODO Auto-generated catch block
-                    System.out.println(" EXCEPTION : " + e.toString());
-                }
-                handler.post(mainloading);
-            }
-   }.start();
-
+   4.1. AnonymousHalloClass
 
