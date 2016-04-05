@@ -1,15 +1,15 @@
 package Algorithms;
-import java.util.Iterator;
 
 /**
- * Generic stack implementation of the stack
+ * Generic parametrized stack implementation of the stack using the 
  * 
  *  For test now its with the String based implementation
  *  kind of bare bone with no JavaDocs
  * This class has implements Iterable interface 
  */
 //TODO the pop with loitering and GC stuff na
-public class AbstractStackImpl<Item> implements AbstractStackI, Iterable<String>{
+@SuppressWarnings("hiding")
+public class AbstractStackImpl<Object> implements AbstractStackI{
 
     protected String myStackArray[]; //Stack holding the array
     protected int positionOfElementinStack; //Holds the position  of elements to be added in stack
@@ -37,6 +37,7 @@ public class AbstractStackImpl<Item> implements AbstractStackI, Iterable<String>
         if(isEmpty()){
             throw new RuntimeException("Stack underflow dude!! ");
         }
+//        myStackArray[positionOfElementinStack] = null; 
         return myStackArray[positionOfElementinStack--];
     }
 
@@ -90,47 +91,5 @@ public class AbstractStackImpl<Item> implements AbstractStackI, Iterable<String>
         //now just copy the contents
         myStackArray = temp;
     }
-    
-    
-    /**
-     * Helper non-static class to implement the iteration of this collection
-     */
-    private class ReverseArrayIterator implements Iterator<String>{
-        
-        private int i = positionOfElementinStack - 1;
-        /**
-         * check for some item and return true if exists
-         * @return
-         */
-        @Override
-        public boolean hasNext() {
-            return (!isEmpty());
-        }
-
-        /**
-         * move along the stack and move the position of the stack pointer
-         * @return
-         */
-        @Override
-        public String next() {
-            return myStackArray[positionOfElementinStack--];
-        }
-
-        /**
-         * Not a supported operation
-         */
-        @Override
-        public void remove() {
-            throw new  UnsupportedOperationException();
-            
-        }
-        
-        
-    }
-
-
-    @Override
-    public Iterator<String> iterator() {
-        return new ReverseArrayIterator();
-    }
+   
 }

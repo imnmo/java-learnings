@@ -7,10 +7,18 @@ package Algorithms;
  */
 public class StackDriver {
 
-    public static void main(String... args) {
-        int max = Integer.parseInt(args[0]);
-        AbstractStackImpl<String> myStack = new AbstractStackImpl<>(max);
-        //To do the common driver for all classes
+    public static void main(String... args)
+    {
+        AbstractStackI myStack = new AbstractStackImpl<>(10);
+        myStack.pushElements("apple");
+        myStack.pushElements("banana");
+        
+        
+        while(!myStack.isEmpty())
+        {
+            System.out.println(myStack.popElements());
+        }
+        
 
     }
 
