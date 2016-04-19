@@ -49,7 +49,6 @@ public class WeatherSubject
         
     }
 
-    
     /**
      * Notify your observer in your update of change in weather
      */
