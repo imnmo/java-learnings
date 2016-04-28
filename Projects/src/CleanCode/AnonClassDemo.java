@@ -30,10 +30,4 @@ public class AnonClassDemo {
         localclass myLocalclassObj = new localclass();
         myLocalclassObj.JustAnProcedure();
     }
-
-    public static void main(String... args)
-    {
-        AnonClassDemo anonClassObj = new AnonClassDemo();
-        anonClassObj.SomeRandomProcedure();
-    }
 }

@@ -7,8 +7,7 @@ package RealLifeDesign;
  * @author enomoha
  *
  */
-
-public interface AirportSimulation
+interface AirportSimulation
 {
     /**
      * the main steps include

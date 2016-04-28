@@ -14,7 +14,6 @@ public class App
     public static void main(String[] args) 
     {
         BattleShip myBattleShip = new Captain(new BattleFishingBoatAdapter());
-        
         myBattleShip.FireTheEnemy();
         myBattleShip.moveInDirections();
     }
