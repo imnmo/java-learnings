@@ -1,4 +1,4 @@
-package com.mylearnings.design.pattern;
+package com.mylearnings.publisher.subcriber.pattern;
 
 /**
  * The interface which acts as the observer/listener to get the notification from

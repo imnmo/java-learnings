@@ -1,4 +1,4 @@
-package com.mylearnings.design.pattern;
+package com.mylearnings.publisher.subcriber.pattern;
 
 import java.util.ArrayList;
 import java.util.List;

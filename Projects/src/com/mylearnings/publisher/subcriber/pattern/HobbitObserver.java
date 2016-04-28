@@ -1,4 +1,4 @@
-package com.mylearnings.design.pattern;
+package com.mylearnings.publisher.subcriber.pattern;
 
 
 /**
