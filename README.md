@@ -1,7 +1,7 @@
 # JavaLearnings
-FunWithJava
 
-This repository contains my learnings and experimentation with Java 7/8 from books like Head First Java, Effective Java and from
-Algorithms book by Robert.
+
+This repository contains tiny experiments and my old learnings with Java 7/8 which I learnt as professional developer
+and as well in universal student. 
 
 
