@@ -33,13 +33,11 @@ element out of it
  * and other member variables to work on..
  
  
- 
- 
  * ArrayList vs. vector in Java:
  
  - Vector is just the old version of the array list which is implemented basically as doubling the size of the existing array
    whereas the arrayList allocates based on the 50% allocation
  - Mostly for the synchronization purposes better use the vector, advice always use declare your list as
    collection.SynchronizedList
- -  
+ - 
  
