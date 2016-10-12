@@ -21,6 +21,9 @@ public class SimpleArray
      */
     public void PrintArrayElements()
     {
+        System.out.println(myObjectArray.length);
+        
+
         for (int i = 0; i <= myObjectArray.length - 1; i++)
         {
             System.out.println(myObjectArray[i]);
