@@ -1,8 +1,5 @@
 package com.Imran.learnings.algorithms;
 
-import java.util.Map;
-import java.util.TreeMap;
-
 /**
  * Main driver for the Stack implemenetation
  *
@@ -13,18 +10,21 @@ public class StackDriver
 
     public static void main(String... args)
     {
-        AbstractStackI myStack = new AbstractStackImpl<>(10);
-//        myStack.pushElements("apple");
-//        myStack.pushElements("banana");
+        AbstractStackI myStack = new AbstractStackImpl<>(1);
+        myStack.pushElements("apple");
+        myStack.pushElements("banana");
+        myStack.pushElements("banana");
+        myStack.pushElements("apple");
+        myStack.pushElements("banana");
+        myStack.pushElements("apple");
+        myStack.pushElements("ornge");
+        myStack.pushElements("pizza");
+        myStack.pushElements("choclate");
 
-
-//        while (!myStack.isEmpty())
-//        {
-        System.out.println(myStack.popElements());
-//        }
-
-
-        Map<String, String> myMap = new TreeMap<>();
+        while (!myStack.isEmpty())
+        {
+            System.out.println(myStack.popElements());
+        }
 
     }
 

@@ -13,7 +13,7 @@ public class AbstractStackImpl<Object> implements AbstractStackI
 {
 
     protected String myStackArray[]; //Stack holding the array
-    protected int positionOfElementinStack; //Holds the position  of elements to be added in stack
+    protected int positionOfElementinStack = 0; //Holds the position  of elements to be added in stack
 
     //A default constructor taking the intial capacity for stack allocation  
     public AbstractStackImpl(int stackCapacity)
@@ -31,7 +31,8 @@ public class AbstractStackImpl<Object> implements AbstractStackI
             //do stack resizing
             resize(4 * myStackArray.length);
         }
-        myStackArray[positionOfElementinStack++] = Item;
+        myStackArray[positionOfElementinStack] = Item;
+        positionOfElementinStack++;
     }
 
     //basically move the position of the array holding
@@ -42,8 +43,9 @@ public class AbstractStackImpl<Object> implements AbstractStackI
         {
             throw new RuntimeException("Stack underflow dude!! ");
         }
-//        myStackArray[positionOfElementinStack] = null; 
-        return myStackArray[0];
+//        myStackArray[positionOfElementinStack] = null;
+        positionOfElementinStack--;
+        return myStackArray[positionOfElementinStack];
     }
 
     @Override
@@ -100,7 +102,7 @@ public class AbstractStackImpl<Object> implements AbstractStackI
         {
             temp[i] = myStackArray[i];
         }
-        //now just copy the contents
+        //put back the reference to myStack itself
         myStackArray = temp;
     }
 

@@ -55,7 +55,11 @@ public class StringProcessing
         System.out.println(Bingo);
 
         //checks if the particular char is upper or lower
-        Character.isLowerCase(myString.charAt(0));
+
+        if (Character.isLowerCase(myProcessId.charAt(0)))
+        {
+            System.out.println("myBad");
+        }
         //reconstruc´t the string 
         StringBuilder stringBuilder = new StringBuilder();
         for (String item : split)
