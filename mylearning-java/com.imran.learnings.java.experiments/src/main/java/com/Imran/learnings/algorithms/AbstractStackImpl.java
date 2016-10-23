@@ -31,6 +31,7 @@ public class AbstractStackImpl<Object> implements AbstractStackI
             //do stack resizing
             resize(4 * myStackArray.length);
         }
+
         myStackArray[positionOfElementinStack] = Item;
         positionOfElementinStack++;
     }
