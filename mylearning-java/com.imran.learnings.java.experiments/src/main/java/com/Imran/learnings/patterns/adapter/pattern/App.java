@@ -16,6 +16,7 @@ public class App
         BattleShip myBattleShip = new Captain(new BattleFishingBoatAdapter());
         myBattleShip.FireTheEnemy();
         myBattleShip.moveInDirections();
+
     }
 
 }

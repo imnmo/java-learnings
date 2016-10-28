@@ -1,4 +1,4 @@
-package com.Imran.learnings.Strings;
+package com.Imran.learnings.strings;
 
 import java.util.ArrayList;
 import java.util.Arrays;

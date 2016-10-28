@@ -1,4 +1,4 @@
-package com.Imran.learnings.Strings;
+package com.Imran.learnings.strings;
 
 /**
  * This class does the string performance on concatanation

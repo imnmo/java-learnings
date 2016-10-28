@@ -1,4 +1,4 @@
-package com.Imran.learnings.CleanCode;
+package com.Imran.learnings.cleancode;
 
 /**
  * Anonymous class and local demo

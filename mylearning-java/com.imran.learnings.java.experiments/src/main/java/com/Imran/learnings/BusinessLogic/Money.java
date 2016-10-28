@@ -1,4 +1,4 @@
-package com.Imran.learnings.BusinessLogic;
+package com.Imran.learnings.businesslogic;
 
 /**
  * Created by enomoha on 05.09.2016.

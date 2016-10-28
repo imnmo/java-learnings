@@ -1,4 +1,4 @@
-package com.Imran.learnings.Numbers;
+package com.Imran.learnings.numbers;
 
 public class GCDCalculatorDriver
 {

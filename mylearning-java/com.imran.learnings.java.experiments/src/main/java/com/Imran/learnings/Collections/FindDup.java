@@ -14,16 +14,14 @@ public class FindDup
     public boolean findDuplicates(List<String> listContainingDuplicates)
     {
 
-        Set<String> mySetWIthDuplicates = new HashSet<>();
+        Set<String> mySetWithoutDuplicates = new HashSet<>();
 
         boolean isPrsent = false;
         for (String myString : listContainingDuplicates)
-
         {
-            if (!mySetWIthDuplicates.add(myString))
+            if (!mySetWithoutDuplicates.add(myString))
             {
                 isPrsent = true;
-
             }
 
         }

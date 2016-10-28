@@ -1,4 +1,4 @@
-package com.Imran.learnings.Numbers;
+package com.Imran.learnings.numbers;
 
 /**
  * This class generates the fibonacci numbers

@@ -1,4 +1,4 @@
-package com.Imran.learnings.CleanCode;
+package com.Imran.learnings.cleancode;
 
 /**
  * Created by enomoha on 30.06.2016.
