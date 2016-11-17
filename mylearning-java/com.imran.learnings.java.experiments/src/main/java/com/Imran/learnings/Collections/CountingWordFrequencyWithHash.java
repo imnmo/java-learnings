@@ -31,14 +31,19 @@ public class CountingWordFrequencyWithHash
                 nameAndCount.put(name, ++count);
             }
         }
+        for (Map.Entry entry : nameAndCount.entrySet())
+        {
+            System.out.println(entry.getKey() + ", " + entry.getValue());
+        }
     }
-
-
+    
     public static void main(String args[])
     {
         CountingWordFrequencyWithHash myCountingWordFrequencyWithHash = new CountingWordFrequencyWithHash();
         List<String> mystring = new ArrayList<>();
         Collections.addAll(mystring, "bingo", "lingo", "bingo");
         myCountingWordFrequencyWithHash.countTheElements(mystring);
+
+
     }
 }

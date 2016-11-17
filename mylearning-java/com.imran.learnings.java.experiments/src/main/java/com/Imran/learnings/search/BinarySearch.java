@@ -6,7 +6,7 @@ package com.Imran.learnings.search;
 public class BinarySearch
 {
 
-    public boolean binarySearch(char key, char[] data)
+    public boolean binarySearch(int key, int[] data)
     {
         int start = 0;
         int end = data.length - 1;
@@ -37,8 +37,8 @@ public class BinarySearch
     public static void main(String args[])
     {
         BinarySearch myBinarySearch = new BinarySearch();
-        char[] myCharArray = {'a', 'b'};
-        System.out.println(myBinarySearch.binarySearch('b', myCharArray));
+        int[] myCharArray = {1, 3, 4, 5};
+        System.out.println(myBinarySearch.binarySearch(1, myCharArray));
     }
 
 }

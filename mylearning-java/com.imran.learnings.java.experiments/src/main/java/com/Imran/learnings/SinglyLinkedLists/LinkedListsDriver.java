@@ -15,19 +15,19 @@ public class LinkedListsDriver
         theList.insertFirst(88);
         theList.displayList(); // display list
 
-        Node foundNode = theList.find(44); // find item
-        if (foundNode != null)
-            System.out.println("The node you want to find:" + foundNode.data);
-//        Node d = theList.delete(22); // delete item
-
-
-        //insert at the last
-        theList.insertLast(11); // insert at rear
-        theList.insertLast(33);
-        theList.insertLast(55);
-
-
-        theList.deleteFirst();
-        theList.displayList();
+//        Node foundNode = theList.find(44); // find item
+//        if (foundNode != null)
+//            System.out.println("The node you want to find:" + foundNode.data);
+////        Node d = theList.delete(22); // delete item
+//
+//
+//        //insert at the last
+//        theList.insertLast(11); // insert at rear
+//        theList.insertLast(33);
+//        theList.insertLast(55);
+//
+//
+//        theList.deleteFirst();
+//        theList.displayList();
     }
 }

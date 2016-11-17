@@ -20,11 +20,22 @@ public class FibonacciGenerator
             return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
+
+    private String doSome(String myString)
+    {
+        if (myString == null)
+        {
+            throw new IllegalStateException("ajd");
+        }
+        return myString;
+    }
+
     public static void main(String args[])
     {
         FibonacciGenerator myFibonacciGenerator = new FibonacciGenerator();
         int myfibo = myFibonacciGenerator.fibonacci(8);
         System.out.println(myfibo);
+        myFibonacciGenerator.doSome(null);
     }
 
 }

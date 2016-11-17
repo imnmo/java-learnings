@@ -19,7 +19,11 @@ public class TryList
 
         myList.add("P");
         myList.add("M");
+        myList.add("P");
         myList.add("L");
+        myList.add("O");
+        myList.add("M");
+        myList.add("U");
 
 /*
         for (String setter : mySet)
@@ -32,6 +36,9 @@ public class TryList
         {
             System.out.println("Output is :" + myDup.findDuplicates(myList));
         }
+
+        String myTestString = "llingo";
+        System.out.println(myDup.findRepetables(myTestString));
 
 
     }
