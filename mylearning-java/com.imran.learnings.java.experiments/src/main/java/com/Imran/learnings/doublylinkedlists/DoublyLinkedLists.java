@@ -41,7 +41,6 @@ public class DoublyLinkedLists
             first = newLink; // first --> newLink
         else
         {
-            //reverese this lines and try them
             last.next = newLink; // old last --> newLink
             newLink.previous = last; // old last <-- newLink
         }
