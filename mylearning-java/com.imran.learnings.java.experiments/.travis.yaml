@@ -1,0 +1,9 @@
+language: java
+jdk:
+- oraclejdk7
+
+env:
+# default install command is just "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
+install:
+- mvn clean install
+sudo: false # route the build to the container-based infrastructure for a faster build
