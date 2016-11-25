@@ -1,7 +1,7 @@
 # JavaLearnings
 
+[![Build Status](https://travis-ci.org/mohamedi/java-coding-practise.svg?branch=master)](https://travis-ci.org/mohamedi/java-coding-practise)
 
-This repository contains tiny experiments and my old learnings with Java 7/8 which I learnt as professional developer
-and as well in university student. 
+Teach yourself Java and became a professional. 
 
 
