@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.arrays;
+package imran.learnings.datastructure.arrays;
 
 /**
  * Created by Imran on 06.10.2016.

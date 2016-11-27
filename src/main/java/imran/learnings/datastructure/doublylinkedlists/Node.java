@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.doublylinkedlists;
+package imran.learnings.datastructure.doublylinkedlists;
 
 /**
  * Created by ${User} on 17.11.2016.

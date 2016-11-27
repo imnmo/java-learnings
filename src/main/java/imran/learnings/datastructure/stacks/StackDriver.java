@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.stacks;
+package imran.learnings.datastructure.stacks;
 
 /**
  * Main driver for the Stack implemenetation

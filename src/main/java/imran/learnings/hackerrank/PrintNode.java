@@ -2,7 +2,7 @@ package imran.learnings.hackerrank;
 // This is a "method-only" submission. 
 // You only need to complete this method. 
 
-import imran.learnings.datastructures.singlylinkedLists.Node;
+import imran.learnings.datastructure.singlylinkedLists.Node;
 
 class PrintNode
 {

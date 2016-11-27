@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.stacks;
+package imran.learnings.datastructure.stacks;
 
 /**
  * Generic parametrized stack implementation of the stack using the

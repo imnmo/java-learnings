@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.arrays;
+package imran.learnings.datastructure.arrays;
 
 import java.util.Arrays;
 

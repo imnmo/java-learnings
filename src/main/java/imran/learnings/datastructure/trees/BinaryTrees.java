@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.trees;
+package imran.learnings.datastructure.trees;
 
 /**
  * An experimental tree in specific binary algorithms tree class speaking about the

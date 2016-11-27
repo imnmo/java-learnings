@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.singlylinkedLists;
+package imran.learnings.datastructure.singlylinkedLists;
 
 /**
  * Created by ${User} on 28.10.2016.

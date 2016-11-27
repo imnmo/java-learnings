@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.stacks;
+package imran.learnings.datastructure.stacks;
 
 public interface AbstractStackI
 /**

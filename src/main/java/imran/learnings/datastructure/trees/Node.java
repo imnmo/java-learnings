@@ -1,4 +1,4 @@
-package imran.learnings.datastructures.trees;
+package imran.learnings.datastructure.trees;
 
 /**
  * Created by enomoha on 20.09.2016.
