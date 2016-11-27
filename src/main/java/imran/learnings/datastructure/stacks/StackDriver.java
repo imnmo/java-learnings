@@ -10,7 +10,7 @@ public class StackDriver
 
     public static void main(String... args)
     {
-        AbstractStackI myStack = new AbstractStackImpl<>(1);
+        AbstractStackImpl myStack = new AbstractStackImpl<String>(1);
         myStack.pushElements("apple");
         myStack.pushElements("banana");
         myStack.pushElements("banana");
@@ -18,7 +18,7 @@ public class StackDriver
         myStack.pushElements("banana");
         myStack.pushElements("apple");
         myStack.pushElements("ornge");
-        myStack.pushElements("pizza");
+        myStack.pushElements(new Integer(1));
         myStack.pushElements("choclate");
 
         while (!myStack.isEmpty())

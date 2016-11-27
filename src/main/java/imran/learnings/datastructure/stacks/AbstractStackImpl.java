@@ -9,73 +9,59 @@ package imran.learnings.datastructure.stacks;
  */
 //TODO the pop with loitering and GC stuff na
 @SuppressWarnings("hiding")
-public class AbstractStackImpl<Object> implements AbstractStackI
+public class AbstractStackImpl<E>
 {
 
-    protected String myStackArray[]; //Stack holding the array
-    protected int positionOfElementinStack = 0; //Holds the position  of elements to be added in stack
+    protected E[] elements;
+    protected int size = 0;
 
-    //A default constructor taking the intial capacity for stack allocation  
     public AbstractStackImpl(int stackCapacity)
     {
-        myStackArray = new String[stackCapacity];
+        elements = (E[]) new Object[stackCapacity];
     }
 
-    //basically move the position and add the element
-    @Override
-    public void pushElements(String Item)
+    public void pushElements(E pitem)
     {
-
         if (isFull())
         {
             //do stack resizing
-            resize(4 * myStackArray.length);
+            resize(4 * elements.length);
         }
-
-        myStackArray[positionOfElementinStack] = Item;
-        positionOfElementinStack++;
+        elements[size++] = pitem;
     }
 
-    //basically move the position of the array holding
-    @Override
-    public String popElements()
+    public E popElements()
     {
         if (isEmpty())
         {
             throw new RuntimeException("Stack underflow dude!! ");
         }
-//        myStackArray[positionOfElementinStack] = null;
-        positionOfElementinStack--;
-        return myStackArray[positionOfElementinStack];
+        E temp = (E) elements[--size];
+        elements[size] = null;
+        return temp;
     }
 
-    @Override
     public Boolean isEmpty()
     {
-        if (positionOfElementinStack == 0)
+        if (size == 0)
             return true;
         return false;
     }
 
-    @Override
     public void displayElements()
     {
     }
 
 
-    //Peeks into the top elements of the Stack
-    @Override
-    public String peekElements()
+    public E peekElements()
     {
-        int maximumStackValue = myStackArray.length;
-        return myStackArray[maximumStackValue];
+        int maximumStackValue = elements.length;
+        return (E) elements[maximumStackValue];
     }
 
-    //just takes the length and checks whether is full or not
-    @Override
     public Boolean isFull()
     {
-        if (myStackArray.length == positionOfElementinStack)
+        if (elements.length == size)
             return true;
         return false;
     }
@@ -84,27 +70,25 @@ public class AbstractStackImpl<Object> implements AbstractStackI
      * returns the size of the stack
      */
 
-    @Override
     public int sizeOfStack()
     {
-        return positionOfElementinStack;
+        return size;
     }
 
     /**
      * Resizes the Array to use for extended length
      */
-    @Override
     public void resize(int maximumReSizeValue)
     {
         //Allocate a new array and copy the contents to new temp
         //array
-        String[] temp = new String[maximumReSizeValue];
-        for (int i = 0; i < positionOfElementinStack; i++)
+        E[] temp = (E[]) new Object[maximumReSizeValue];
+        for (int i = 0; i < size; i++)
         {
-            temp[i] = myStackArray[i];
+            temp[i] = elements[i];
         }
         //put back the reference to myStack itself
-        myStackArray = temp;
+        elements = temp;
     }
 
 }

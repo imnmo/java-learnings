@@ -1,6 +1,6 @@
 package imran.learnings.datastructure.stacks;
 
-public interface AbstractStackI
+public interface AbstractStackI<E extends Object>
 /**
  * This is an Fixed stack interface
  * basically the Stack contains following things:
@@ -16,12 +16,12 @@ public interface AbstractStackI
      *
      * @param pitem
      */
-    void pushElements(String pitem);
+    void pushElements(E pitem);
 
     /**
      * pops the top element from the stack
      */
-    String popElements();
+    E popElements();
 
     /**
      * checks whether the stack empty or not
@@ -47,7 +47,7 @@ public interface AbstractStackI
     /**
      * Seek and tells the top most element in the stack
      */
-    String peekElements();
+    E peekElements();
 
     /**
      * resize the array when needed
