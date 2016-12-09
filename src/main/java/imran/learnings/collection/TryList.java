@@ -1,4 +1,4 @@
-package imran.learnings.collections;
+package imran.learnings.collection;
 
 import java.util.ArrayList;
 import java.util.List;

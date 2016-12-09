@@ -1,7 +1,7 @@
 # JavaLearnings
 
-[![Build Status](https://travis-ci.org/mohamedi/java-coding-practise.svg?branch=master)](https://travis-ci.org/mohamedi/java-coding-practise)
+[![Build Status](https://travis-ci.org/mohamedi/java-learnings.svg?branch=master)](https://travis-ci.org/mohamedi/java-learnings)
 
-Teach yourself Java and became a professional. 
+Java - Data Structures and Algorithm playground. 
 
 

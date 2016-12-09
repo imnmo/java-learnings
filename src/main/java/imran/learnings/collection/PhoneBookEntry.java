@@ -1,4 +1,4 @@
-package imran.learnings.collections;
+package imran.learnings.collection;
 
 public class PhoneBookEntry
 {

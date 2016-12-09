@@ -1,4 +1,4 @@
-package imran.learnings.collections;
+package imran.learnings.collection;
 
 // Counts the frequency of each of the words in a file given in the command-line,
 // and saves in a map of {word, freq}.

@@ -1,4 +1,4 @@
-package imran.learnings.collections;
+package imran.learnings.collection;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
