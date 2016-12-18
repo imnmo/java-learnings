@@ -59,7 +59,7 @@ public class MergeSort
 
     public static void main(String args[])
     {
-        int[] myArray = {1, 4, 5, 2, 3, 0};
+        int[] myArray = {1, 4, 5, 2, 3, 0, 0, 0};
         MergeSort mergeSort = new MergeSort();
         mergeSort.mergeSort(myArray);
         System.out.println(Arrays.toString(myArray));
