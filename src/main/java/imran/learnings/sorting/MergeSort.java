@@ -13,7 +13,7 @@ public class MergeSort
         int jRight = 0;
         int kArray = 0;
 
-        while (iLeft < leftArray.length - 1 && jRight < rightArray.length - 1)
+        while (iLeft < leftArray.length && jRight < rightArray.length)
         {
             if (leftArray[iLeft] <= rightArray[jRight])
             {
@@ -28,13 +28,13 @@ public class MergeSort
             kArray++;
         }
 
-        while (iLeft < leftArray.length - 1)
+        while (iLeft < leftArray.length)
         {
             arrayToMerge[kArray] = leftArray[iLeft];
             iLeft++;
             kArray++;
         }
-        while (jRight < rightArray.length - 1)
+        while (jRight < rightArray.length)
         {
             arrayToMerge[kArray] = rightArray[jRight];
             jRight++;
@@ -49,16 +49,8 @@ public class MergeSort
         if (size < 2)
             return;
         int mid = size / 2;
-        int left[] = new int[mid];
-        int right[] = new int[size - left.length];
-
-        System.arraycopy(arrayToSort, 0, left, 0, left.length);
-        System.arraycopy(arrayToSort, left.length, right, 0, right.length);
-//        for (int i = 0; i < mid; i++)
-//            left[i] = arrayToSort[i];
-//
-//        for (int j = mid; j < size; j++)
-//            right[j - mid] = arrayToSort[j];
+        int left[] = Arrays.copyOfRange(arrayToSort, 0, mid);
+        int right[] = Arrays.copyOfRange(arrayToSort, mid, size);
 
         mergeSort(left);
         mergeSort(right);
