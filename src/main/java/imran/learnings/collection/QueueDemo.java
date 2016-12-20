@@ -49,7 +49,7 @@ public class QueueDemo
     {
         Queue<Integer> pQueue = new PriorityQueue<>();
         //Min heap property is maintained
-        //The head of this queue is the least element with respect to the specified ordering
+        //The head of this Queue is the least element with respect to the specified ordering
 
         pQueue.add(100);
         pQueue.add(50);
