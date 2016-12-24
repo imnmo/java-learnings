@@ -8,8 +8,7 @@ public class Node
 
     public int data; // data item (key)
     public Node next; // next link in list
-
-    // -------------------------------------------------------------
+    
     public Node(int id) // constructor
     {
         data = id; // initialize data

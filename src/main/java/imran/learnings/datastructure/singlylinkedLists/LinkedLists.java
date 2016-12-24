@@ -9,14 +9,12 @@ public class LinkedLists
     private Node first; // ref to first link on list
     private Node last; // ref to last link
 
-    // -------------------------------------------------------------
     public LinkedLists() // constructor
     {
         first = null; // no items on list yet
         last = null;
     }
 
-    // -------------------------------------------------------------
     public boolean isEmpty() // true if list is empty
     {
         return (first == null);
@@ -53,13 +51,13 @@ public class LinkedLists
         return temp; // return deleted link
     }
 
-    public Node delete(int key) // delete first item
+    public Node delete(int key) // delete any item
     {
         if (isEmpty())
             throw new IllegalStateException();
 
 
-        Node current = first; // algorithms for link
+        Node current = first;
         Node previous = first;
         while (current.data != key)
         {

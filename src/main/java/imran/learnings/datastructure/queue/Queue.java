@@ -8,17 +8,16 @@ import imran.learnings.datastructure.singlylinkedLists.Node;
 public class Queue
 {
     private int numberOfItems;         // number of elements on queue
-    private Node first;    // beginning of queue
-    private Node last;     // end of queue
-
-
+    private Node head;    // beginning of queue
+    private Node tail;     // end of queue
+    
     /**
      * Create an empty queue.
      */
     public Queue()
     {
-        first = null;
-        last = null;
+        head = null;
+        tail = null;
     }
 
     /**
@@ -26,7 +25,7 @@ public class Queue
      */
     public boolean isEmpty()
     {
-        return first == null;
+        return head == null;
     }
 
     /**
@@ -45,42 +44,42 @@ public class Queue
     {
         if (isEmpty())
             throw new RuntimeException("Queue underflow");
-        return first.data;
+        return head.data;
     }
 
 
     /**
-     * Add the item to the queue.
+     * Add the item to the queue(here everything is added in tail or tail).
      */
     public void enqueue(int intItem)
     {
-        Node current = new Node(intItem);
+        Node newLink = new Node(intItem);
         if (isEmpty())
         {
-            first = current;
-            last = current;
+            head = newLink;
+            tail = newLink;
         }
         else
         {
-            last.next = current;
-            last = current;
+            tail.next = newLink;
+            tail = newLink;
         }
         numberOfItems++;
     }
 
     /**
-     * Remove and return the item on the queue least recently added.
+     * Remove and return the item on the queue
      * Throw an exception if the queue is empty.
      */
     public int dequeue()
     {
         if (isEmpty())
             throw new RuntimeException("Queue underflow");
-        int temp = first.data;
-        first = first.next;
+        int temp = head.data;
+        head = head.next;
         numberOfItems--;
         if (isEmpty())
-            last = null;   // to avoid loitering
+            tail = null;   // to avoid loitering
         return temp;
     }
 
@@ -89,7 +88,7 @@ public class Queue
      */
     public void displayLink()
     {
-        Node temp = first;
+        Node temp = head;
         while (temp != null) // until end of list,
 
         {
