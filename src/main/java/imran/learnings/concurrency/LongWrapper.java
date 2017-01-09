@@ -6,11 +6,12 @@ package imran.learnings.concurrency;
 public class LongWrapper
 {
     private long myLong;
+    private final Object key = new Object();
 
-    public LongWrapper()
+    public LongWrapper(long pLong)
     {
 
-        this.myLong = myLong;
+        this.myLong = pLong;
     }
 
     public long getValue()
@@ -21,8 +22,13 @@ public class LongWrapper
 
     public void incrementValue()
     {
-        myLong++;
-
+        /**
+         * A synchronized method, to see race condition comment this out 
+         */
+        synchronized (key)
+        {
+            myLong++;
+        }
     }
 
 }
