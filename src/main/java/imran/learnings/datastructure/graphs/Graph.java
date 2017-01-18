@@ -58,15 +58,15 @@ public class Graph
         while (!stack.isEmpty()) // until stack empty,
         {
 // get an unvisited vertex adjacent to stack top
-            int v = getAdjUnvisitedVertex(stack.peekElements());
-            if (v == -1) // if no such vertex,
-                stack.popElements();
-            else // if it exists,
-            {
-                vertexList[v].wasVisited = true; // mark it
-                displayVertex(v); // display it
-                stack.pushElements(v); // push it
-            }
+//            int v = getAdjUnvisitedVertex(stack.peekElements());
+//            if (v == -1) // if no such vertex,
+//                stack.popElements();
+//            else // if it exists,
+//            {
+//                vertexList[v].wasVisited = true; // mark it
+//                displayVertex(v); // display it
+//                stack.pushElements(v); // push it
+//            }
         }
         for (int j = 0; j < numberOfVertices; j++) // reset flags
             vertexList[j].wasVisited = false;
