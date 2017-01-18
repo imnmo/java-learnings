@@ -1,5 +1,7 @@
 package imran.learnings.datastructure.graphs;
 
+import imran.learnings.datastructure.stacks.AbstractStackImpl;
+
 /**
  * A simple graph model to represent the vertices and edges
  */
@@ -9,6 +11,7 @@ public class Graph
     private Vertex vertexList[];
     private int adjacentMatrices[][];
     private int numberOfVertices;
+    private AbstractStackImpl stack;
 
     public Graph()
     {
@@ -16,6 +19,7 @@ public class Graph
         adjacentMatrices = new int[MAX_VERTS][MAX_VERTS];
         numberOfVertices = 0;
         intializeAdjacentMatrices();
+        stack = new AbstractStackImpl(50);
     }
 
     /**
@@ -46,4 +50,33 @@ public class Graph
         System.out.print(vertexList[v].label);
     }
 
+    public void dpethfirstsearch()
+    { // begin at vertex 0
+        vertexList[0].wasVisited = true; // mark it
+        displayVertex(0); // display it
+        stack.pushElements(0); // push it
+        while (!stack.isEmpty()) // until stack empty,
+        {
+// get an unvisited vertex adjacent to stack top
+            int v = getAdjUnvisitedVertex(stack.peekElements());
+            if (v == -1) // if no such vertex,
+                stack.popElements();
+            else // if it exists,
+            {
+                vertexList[v].wasVisited = true; // mark it
+                displayVertex(v); // display it
+                stack.pushElements(v); // push it
+            }
+        }
+        for (int j = 0; j < numberOfVertices; j++) // reset flags
+            vertexList[j].wasVisited = false;
+    }
+
+    public int getAdjUnvisitedVertex(int v)
+    {
+        for (int j = 0; j < numberOfVertices; j++)
+            if (adjacentMatrices[v][j] == 1 && vertexList[j].wasVisited == false)
+                return j;
+        return -1;
+    }
 }
