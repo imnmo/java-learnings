@@ -1,82 +1,124 @@
 package imran.learnings.datastructure.graphs;
 
-import imran.learnings.datastructure.stacks.AbstractStackImpl;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-/**
- * A simple graph model to represent the vertices and edges
- */
-public class Graph
+public class Graph<T>
 {
-    private final int MAX_VERTS = 20;
-    private Vertex vertexList[];
-    private int adjacentMatrices[][];
-    private int numberOfVertices;
-    private AbstractStackImpl stack;
 
-    public Graph()
+    private List<Edge<T>> allEdges;
+    private Map<Long, Vertex<T>> allVertex;
+    boolean isDirected = false;
+
+    public Graph(boolean isDirected)
     {
-        vertexList = new Vertex[MAX_VERTS];
-        adjacentMatrices = new int[MAX_VERTS][MAX_VERTS];
-        numberOfVertices = 0;
-        intializeAdjacentMatrices();
-        stack = new AbstractStackImpl(50);
+        allEdges = new ArrayList<Edge<T>>();
+        allVertex = new HashMap<Long, Vertex<T>>();
+        this.isDirected = isDirected;
     }
 
-    /**
-     * Initializes the adajacent matrices
-     */
-    private void intializeAdjacentMatrices()
+    public void addEdge(long id1, long id2)
     {
-        for (int j = 0; j < MAX_VERTS; j++)
-            for (int k = 0; k < MAX_VERTS; k++)
-                adjacentMatrices[j][k] = 0;
+        addEdge(id1, id2, 0);
     }
 
-    public void addVertex(char vertex)
+    //This works only for directed graph because for undirected graph we can end up
+    //adding edges two times to allEdges
+    public void addVertex(Vertex<T> vertex)
     {
-        vertexList[numberOfVertices++] = new Vertex(vertex);
-    }
-
-
-    public void addEdge(int start, int end)
-    {
-        adjacentMatrices[start][end] = 1;
-        adjacentMatrices[end][start] = 1;
-    }
-
-
-    public void displayVertex(int v)
-    {
-        System.out.print(vertexList[v].label);
-    }
-
-    public void dpethfirstsearch()
-    { // begin at vertex 0
-        vertexList[0].wasVisited = true; // mark it
-        displayVertex(0); // display it
-        stack.pushElements(0); // push it
-        while (!stack.isEmpty()) // until stack empty,
+        if (allVertex.containsKey(vertex.getId()))
         {
-// get an unvisited vertex adjacent to stack top
-//            int v = getAdjUnvisitedVertex(stack.peekElements());
-//            if (v == -1) // if no such vertex,
-//                stack.popElements();
-//            else // if it exists,
-//            {
-//                vertexList[v].wasVisited = true; // mark it
-//                displayVertex(v); // display it
-//                stack.pushElements(v); // push it
-//            }
+            return;
         }
-        for (int j = 0; j < numberOfVertices; j++) // reset flags
-            vertexList[j].wasVisited = false;
+        allVertex.put(vertex.getId(), vertex);
+        for (Edge<T> edge : vertex.getEdges())
+        {
+            allEdges.add(edge);
+        }
     }
 
-    public int getAdjUnvisitedVertex(int v)
+    public Vertex<T> addSingleVertex(long id)
     {
-        for (int j = 0; j < numberOfVertices; j++)
-            if (adjacentMatrices[v][j] == 1 && vertexList[j].wasVisited == false)
-                return j;
-        return -1;
+        if (allVertex.containsKey(id))
+        {
+            return allVertex.get(id);
+        }
+        Vertex<T> v = new Vertex<T>(id);
+        allVertex.put(id, v);
+        return v;
+    }
+
+    public Vertex<T> getVertex(long id)
+    {
+        return allVertex.get(id);
+    }
+
+    public void addEdge(long id1, long id2, int weight)
+    {
+        Vertex<T> vertex1 = null;
+        if (allVertex.containsKey(id1))
+        {
+            vertex1 = allVertex.get(id1);
+        }
+        else
+        {
+            vertex1 = new Vertex<T>(id1);
+            allVertex.put(id1, vertex1);
+        }
+        Vertex<T> vertex2 = null;
+        if (allVertex.containsKey(id2))
+        {
+            vertex2 = allVertex.get(id2);
+        }
+        else
+        {
+            vertex2 = new Vertex<T>(id2);
+            allVertex.put(id2, vertex2);
+        }
+
+        Edge<T> edge = new Edge<T>(vertex1, vertex2, isDirected, weight);
+        allEdges.add(edge);
+        vertex1.addAdjacentVertex(edge, vertex2);
+        if (!isDirected)
+        {
+            vertex2.addAdjacentVertex(edge, vertex1);
+        }
+
+    }
+
+    public List<Edge<T>> getAllEdges()
+    {
+        return allEdges;
+    }
+
+    public Collection<Vertex<T>> getAllVertex()
+    {
+        return allVertex.values();
+    }
+
+    public void setDataForVertex(long id, T data)
+    {
+        if (allVertex.containsKey(id))
+        {
+            Vertex<T> vertex = allVertex.get(id);
+            vertex.setData(data);
+        }
+    }
+
+    @Override
+    public String toString()
+    {
+        StringBuffer buffer = new StringBuffer();
+        for (Edge<T> edge : getAllEdges())
+        {
+            buffer.append(edge.getVertex1() + " " + edge.getVertex2() + " " + edge.getWeight());
+            buffer.append("\n");
+        }
+        return buffer.toString();
     }
 }
+
+ 
