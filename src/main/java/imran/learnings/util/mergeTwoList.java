@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by imran on 13.02.2017.
  */
-public class mergeTwoList
+public class MergeTwoList
 {
     public List<Integer> merge(List<Integer> leftList, List<Integer> rightList)
     {
@@ -15,12 +15,12 @@ public class mergeTwoList
         int jRight = 0;
 
         List<Integer> myMergedList = new ArrayList<>();
-        //At one point one the lists will be completely exhausted or reaches the maximum
         while (iLeft < leftList.size() && jRight < rightList.size())
         {
             if (leftList.get(iLeft) <= rightList.get(jRight))
             {
                 myMergedList.add(leftList.get(iLeft));
+
                 iLeft++;
             }
             else
@@ -30,7 +30,6 @@ public class mergeTwoList
             }
         }
 
-        //Just append the rest of element to the list
         while (iLeft < leftList.size())
         {
             myMergedList.add(leftList.get(iLeft));
@@ -57,7 +56,7 @@ public class mergeTwoList
         myRightList.add(2);
         myRightList.add(3);
 
-        mergeTwoList myMergeTwoList = new mergeTwoList();
+        MergeTwoList myMergeTwoList = new MergeTwoList();
         System.out.println(Arrays.asList(myMergeTwoList.merge(myLeftList, myRightList)));
     }
 }
