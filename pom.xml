@@ -31,4 +31,24 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <build>
+    <finalName>imran-learnings</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>license-maven-plugin</artifactId>
+            <version>1.12</version>
+            <configuration>
+                <licenseName>apache_v2</licenseName>
+                <roots>
+                    <root>src/main/java</root>
+                    <root>src/test/java</root>
+                </roots>
+                <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+                <failOnMissingHeader>false</failOnMissingHeader>
+                <failOnNotUptodateHeader>false</failOnNotUptodateHeader>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>
