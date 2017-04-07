@@ -8,8 +8,7 @@ import java.util.Arrays;
  */
 public class StringAnagram
 {
-    public static String numberNeeded(String first, String Second)
-    {
+    public static String numberNeeded(String first, String Second) {
         // initializing unsorted int array
         char iArr[] = first.toCharArray();
         // sorting array

@@ -1,7 +1,5 @@
 # Java Books
 
-# Goal: Read three books per year!
-# Goal 2017 Q1(March-May): Grokking Algorithm, OCA certified.
 # Java SE
 * Java 8 in Action: Lambdas, Streams, and functional-style programming, Raoul-Gabriel Urma, Mario Fusco, Alan Mycroft, Manning Publications, 2014
 * Java 8 Lambdas, Richard Warburton, O'Reilly Media, 2014
