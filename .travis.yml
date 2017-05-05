@@ -1,6 +1,6 @@
 language: java
 jdk:
-- oraclejdk7
+- oraclejdk8
 
 env:
 # default install command is just "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
